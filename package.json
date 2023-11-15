@@ -1,10 +1,10 @@
 {
+  "homepage": "https://github.io/Parag-47/emp-management",
   "name": "client",
   "version": "1.0.0",
   "author": "Parag",
   "license": "ISC",
   "description": "",
-  "homepage": "https://github.io/Parag-47/emp-management",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
