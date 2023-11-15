@@ -3,6 +3,7 @@ import { useEffect, useState, useRef } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 export default function Update() {
+  const s = "";
   const nav = useNavigate();
   const loc = useLocation();
   const rFirstName = useRef();
@@ -130,7 +131,7 @@ export default function Update() {
       await axios.put("http://localhost:9000/update", data).then((res) => {
         if (res.data.message === "Record Updated!") {
             alert(res.data.message);
-            setFirstName("");
+            setFirstName(s);
             setLastName("");
             setEmail("");
             setPhone("");
