@@ -96,7 +96,7 @@ export default function View() {
   );
 
   const handleDelete = async (val) => {
-    if(confirm("This data will be deleted from the database!\nAre You Sure?"))
+    if(confirm("This data will be deleted from the database!\nAre You Sure?")===true)
     {
       try {
       await axios
@@ -114,7 +114,7 @@ export default function View() {
   };
 
   const handleUpdate = (val) => {
-    console.log
+    console.log(val);
     localStorage.setItem("refEmail", val);
     nav("/update"); 
   }

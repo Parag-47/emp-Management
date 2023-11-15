@@ -129,7 +129,7 @@ export default function Update() {
     try {
       await axios.put("http://localhost:9000/update", data).then((res) => {
         if (res.data.message === "Record Updated!") {
-            alert(res.data.message);
+            alert(res.data.message),
             setFirstName(""),
             setLastName(""),
             setEmail(""),
