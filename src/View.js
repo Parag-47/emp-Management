@@ -96,7 +96,7 @@ export default function View() {
   );
 
   const handleDelete = async (val) => {
-    if(confirm("This data will be deleted from the database!\nAre You Sure?")===true)
+    if(window.confirm("This data will be deleted from the database!\nAre You Sure?")===true)
     {
       try {
       await axios
