@@ -68,7 +68,7 @@ export default function Create() {
       salary,
     };
     try {
-      await axios.post("http://localhost:9000/create", data).then((res) => {
+      await axios.post("https://emp-management-api.vercel.app/create", data).then((res) => {
         if (res.data.message === "Recored Created!") {
             alert(res.data.message);
             setFirstName("");

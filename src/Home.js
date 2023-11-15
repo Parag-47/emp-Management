@@ -26,7 +26,7 @@ function Home() {
 
   const getData = async () => {
     try {
-      await axios.get("http://localhost:9000/get").then((res) => {
+      await axios.get("https://emp-management-api.vercel.app/get").then((res) => {
         setData(res.data);
         //data = res.data;
         //console.log("Res= " + res.data);

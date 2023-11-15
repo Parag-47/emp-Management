@@ -58,7 +58,7 @@ export default function Login() {
     console.log(data);
 
     try {
-      await axios.post("http://localhost:9000/login",data).then((res)=>{
+      await axios.post("https://emp-management-api.vercel.app/login",data).then((res)=>{
         if(res.data.sucess===true)
         {
           alert(res.data.message);

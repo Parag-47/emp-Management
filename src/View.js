@@ -63,7 +63,7 @@ export default function View() {
 
   const getData = async () => {
     try {
-      const req = await fetch("http://localhost:9000/data");
+      const req = await fetch("https://emp-management-api.vercel.app/data");
       const res = await req.json();
       setData(res);
       setFilter(res);
@@ -100,7 +100,7 @@ export default function View() {
     {
       try {
       await axios
-        .post("http://localhost:9000/delete", { email: val })
+        .post("https://emp-management-api.vercel.app/delete", { email: val })
         .then((res) => {
           alert(res.data.message);
           console.log(res.data.message);

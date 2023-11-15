@@ -60,7 +60,7 @@ export default function Signup() {
       const email = uemail.trim().toLowerCase();
         const data = {email: email,password: password};
         try {
-            await axios.put("http://localhost:9000/sendMail",data).then((res)=>{
+            await axios.put("https://emp-management-api.vercel.app/sendMail",data).then((res)=>{
             alert(res.data.message);
             setEmail("");
             setPassword("");

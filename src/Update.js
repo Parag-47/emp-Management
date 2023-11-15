@@ -70,7 +70,7 @@ export default function Update() {
     //const email = {email: refEmail};
     //console.log("Local "+refEmail);
     try {
-      await axios.post("http://localhost:9000/find", { Email }).then((res) => {
+      await axios.post("https://emp-management-api.vercel.app/find", { Email }).then((res) => {
         setId(res.data._id);
         setFirstName(res.data.firstName);
         setLastName(res.data.lastName);
@@ -128,7 +128,7 @@ export default function Update() {
     };
     console.log(Format);
     try {
-      await axios.put("http://localhost:9000/update", data).then((res) => {
+      await axios.put("https://emp-management-api.vercel.app/update", data).then((res) => {
         if (res.data.message === "Record Updated!") {
             alert(res.data.message);
             setFirstName(s);
